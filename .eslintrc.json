@@ -1,0 +1,45 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline"
+      }
+    ],
+    "semi": ["error", "never"],
+    "no-console": "off",
+    "no-unused-vars": "warn",
+    "generator-star-spacing": ["error", "after"],
+    "radix": "warn",
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allowAfterThis": true
+      }
+    ],
+    "no-throw-literal": "warn",
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "always"],
+    "prefer-template": "error",
+    "template-curly-spacing": ["error", "always"],
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-body-style": ["error", "as-needed"],
+    "no-use-before-define": "error",
+    "no-var": "error",
+    "quotes": ["error", "single", { "avoidEscape": true }]
+  }
+}
