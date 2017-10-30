@@ -1,15 +1,38 @@
 {
   "name": "captain-hook",
-  "description": "",
+  "description": "A easy to use git hook server. Arrrrrgh!",
   "version": "0.1.0",
+  "main": "./lib/captain-hook",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lukeskywlkr/captain-hook.git"
+  },
+  "files": ["lib", "bin"],
+  "contributors": [
+    {
+      "name": "Luca De Carne",
+      "email": ""
+    },
+    {
+      "name": "Luca Aguzzoli",
+      "email": "luca.aguzzoli@hotmail.it"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/lukeskywlkr/captain-hook/issues"
+  },
+  "bin": {
+    "captain-hook": "./bin/captain-hook"
+  },
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.12.3",
     "nodemon": "^1.12.1",
+    "optimist": "^0.6.1",
     "request": "^2.69.0"
   },
   "scripts": {
-    "start": "node app",
-    "dev": "nodemon app"
+    "start": "node bin/captain-hook",
+    "dev": "nodemon lib/captain-hook"
   }
 }
